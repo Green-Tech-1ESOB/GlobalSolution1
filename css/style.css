@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Winky+Sans:ital@0;1&display=swap');
+
+:root {
+    --cor-header: rgb(24, 67, 83);
+    --cor-fundo: #f4f4f4;
+    --cor-texto1: #3e6606;
+    --cor-texto2: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto2);
+    background-color: var(--cor-fundo);
+}
+
+header {
+    background-color: var(--cor-header);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.cabecalho-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #dbdbdb;
+}
+
+
+.logo-texto {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+
+
+nav ul li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #dbdbdb;
+    text-decoration: underline;
+}
+
+main {
+    padding: 0 20px;
+}
+
+#banner {
+    color: var(--cor-fundo);
+    text-align: center;
+    padding: 5rem 1rem;
+    margin: 20px -20px;
+}
+
+#banner h1 {
+    font-size: 2.5rem;
+}
+
+#banner p {
+    font-size: 1.7rem;
+}
+
+section {
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    padding: 2rem 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .cabecalho-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        text-align: left;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #banner h1 {
+        font-size: 2rem;
+    }
+
+    #banner p {
+        font-size: 1rem;
+    }
+}
+
+.banner-conteudo {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#banner {
+    background: url('https://cdn.pixabay.com/photo/2022/03/06/05/30/clouds-7050884_1280.jpg') no-repeat center center/cover;
+    position: relative;
+    padding: 6rem 1rem;
+}
+
+#banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+   
+}
+
+.banner-conteudo {
+    position: relative;
+    z-index: 2;
+}
+
+
+.botao2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 120px; 
+    background-color: #eaf6f9;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 1700px; 
+    flex-wrap: wrap;
+  }
+
+
+  .sobre-img {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sobre-img img {
+    max-width: 100%;
+    height: auto;
+    max-height: 425px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .sobre-texto {
+    flex: 1 1 40%;
+    font-size: 19px; 
+    line-height: 1.5;
+  }
+
+  .sobre-texto p {
+    margin-bottom: 20px;
+  }
+
+@media (max-width: 992px) {
+    #sobre .conteudo-secao {
+        flex-direction: column;
+    }
+}
+
+
+    
